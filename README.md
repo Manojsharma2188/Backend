@@ -1,33 +1,32 @@
-**The Empployee Dairy Application in that:
-**
+# The Empployee Dairy Application in that:
+
 Employee has id, name, designation, age, gender status.
 Based on role user peroform operation on employee dairy.
 Admin - User can create, retrieve, update, delete employee data.
 User - View and Upadte
 There is a search box for finding Employee by name.
 
-**Login-
-**Login with username & password. Authorization by the role of the User (admin, user)
+# Login-
+
+Login with username & password. Authorization by the role of the User (admin, user)
 We have 2 endpoints for authentication:
 api/auth/signin for User Login
 If Client wants to send request to protected data/endpoints, a legal JWT must be added to HTTP Authorization Header.
 
 
-**Admin-
-**
+# Admin-
 Delete the Employee using Delete button
 Update the Employee details with Update button
 Add the Employee details with Add button
 
-**User - 
-**
+# User - 
 Update the Employee details with Update button
 
 
 Spring Boot exports REST Apis using Spring Web MVC & interacts with embedded Database using Spring Data JPA.
 Angular Client sends HTTP Requests and retrieve HTTP Responses, shows data on the components. We also use Angular Router for navigating to pages.
 
-**Dependency**
+# Dependency
 
 – If you want to use PostgreSQL:
 
@@ -44,8 +43,8 @@ Angular Client sends HTTP Requests and retrieve HTTP Responses, shows data on th
   <scope>runtime</scope>
 </dependency>
 
-**Open src/main/resources/application.properties
-**
+# Open src/main/resources/application.properties
+
 For PostgreSQL:
 spring.datasource.url= jdbc:postgresql://localhost:5432/employeeData
 spring.datasource.username= root
@@ -67,14 +66,13 @@ spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDiale
 spring.jpa.hibernate.ddl-auto= update
 
 
-Run Spring Boot application
+# Run Spring Boot application
 mvn spring-boot:run
 
-Run Angular App-
+# Run Angular App-
 ng serve
 
-**Database Quries for reference -
-**
+# Database Quries for reference -
 use employeedata;
 
 CREATE TABLE users 
